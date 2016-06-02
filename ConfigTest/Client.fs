@@ -16,8 +16,7 @@ module Client =
         let hello = config?hello
         let test = config?test
 
-        div [
-            text hello
-            text test
-        ]
+        div 
+            [ text hello
+              text test ]
         |> Doc.RunById "main"
